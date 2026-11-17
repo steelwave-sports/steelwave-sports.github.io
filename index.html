@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="STEELWAVE — ropa urbana. Descubre camisetas y sudaderas.">
+  <title>STEELWAVE — Official Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#" onclick="showShop(); return false;" aria-label="STEELWAVE inicio">STEELWAVE<span>®</span></a>
+    <span class="header-note">OFFICIAL STORE</span>
+  </header>
+
+  <main>
+    <section id="shop-view" class="view">
+      <div class="intro">
+        <p class="eyebrow">NEW COLLECTION / 2026</p>
+        <h1>STEELWAVE<span>.</span></h1>
+        <p class="intro-copy">Piezas esenciales. Estilo sin ruido.</p>
+      </div>
+
+      <div class="section-heading">
+        <h2>PRODUCTOS</h2>
+        <span>04 PIEZAS</span>
+      </div>
+
+      <section class="products" aria-label="Catálogo de productos">
+        <button class="product-card" onclick="showProduct(0)">
+          <div class="product-image"><img src="assets/camiseta-azul.jpg" alt="Camiseta STEELWAVE azul claro"><span class="view-label">VER PRODUCTO ↗</span></div>
+          <div class="product-info"><div><h3>Camiseta STEELWAVE</h3><p>AZUL CLARO</p></div><strong>Consultar precio</strong></div>
+        </button>
+        <button class="product-card" onclick="showProduct(1)">
+          <div class="product-image"><img src="assets/sudadera-azul.jpg" alt="Sudadera STEELWAVE azul claro"><span class="view-label">VER PRODUCTO ↗</span></div>
+          <div class="product-info"><div><h3>Sudadera STEELWAVE</h3><p>CON CAPUCHA · AZUL</p></div><strong>Consultar precio</strong></div>
+        </button>
+        <button class="product-card" onclick="showProduct(2)">
+          <div class="product-image"><img src="assets/sudadera-negra.jpg" alt="Sudadera STEELWAVE negra"><span class="view-label">VER PRODUCTO ↗</span></div>
+          <div class="product-info"><div><h3>Sudadera STEELWAVE</h3><p>CON CAPUCHA · NEGRA</p></div><strong>Consultar precio</strong></div>
+        </button>
+        <button class="product-card" onclick="showProduct(3)">
+          <div class="product-image"><img src="assets/camiseta-negra.jpg" alt="Camiseta STEELWAVE negra"><span class="view-label">VER PRODUCTO ↗</span></div>
+          <div class="product-info"><div><h3>Camiseta STEELWAVE</h3><p>NEGRA</p></div><strong>Consultar precio</strong></div>
+        </button>
+      </section>
+    </section>
+
+    <section id="product-view" class="view product-detail" hidden>
+      <button class="back-button" onclick="showShop()">← VOLVER A PRODUCTOS</button>
+      <div class="detail-layout">
+        <div class="detail-image"><img id="detail-img" src="" alt=""></div>
+        <div class="detail-copy">
+          <p class="eyebrow">STEELWAVE / PRODUCT</p>
+          <h1 id="detail-name"></h1>
+          <p id="detail-variant" class="detail-variant"></p>
+          <p class="detail-price">Precio: <strong>por confirmar</strong></p>
+          <div class="detail-rule"></div>
+          <h2>¿QUIERES EL TUYO?</h2>
+          <p class="order-copy">Para realizar tu pedido, contacta con nosotros por teléfono:</p>
+          <div class="phone-placeholder">TELÉFONO: <strong>POR COMPLETAR</strong></div>
+          <p class="small-note">Sustituiremos este texto por el número de contacto cuando esté disponible.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 STEELWAVE</span><span>MADE TO MOVE.</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>

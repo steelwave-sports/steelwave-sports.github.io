@@ -1,0 +1,33 @@
+*{box-sizing:border-box} :root{--black:#101010;--muted:#777;--line:#e7e7e7;--paper:#fff}
+html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--black);font-family:"DM Sans",Arial,sans-serif}
+.site-header{height:76px;padding:0 6.2%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.wordmark{font:700 22px "Space Grotesk",sans-serif;letter-spacing:-1.2px;color:var(--black);text-decoration:none}.wordmark span{font:500 10px "DM Sans";vertical-align:top;margin-left:3px}
+.header-note,.eyebrow,.section-heading span,.product-info p,footer,.back-button{font-size:10px;letter-spacing:1.8px;font-weight:700}
+.header-note{color:#888}
+main{max-width:1240px;margin:0 auto;padding:0 6.2%}
+.intro{padding:78px 0 66px;text-align:center}.eyebrow{color:#888;margin:0 0 15px}
+.intro h1{font:700 clamp(54px,9vw,100px)/.95 "Space Grotesk",sans-serif;letter-spacing:-7px;margin:0}
+.intro h1 span{color:#a6c9d8}.intro-copy{color:#777;font-size:14px;margin:19px 0 0}
+.section-heading{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--black);padding:0 0 15px;margin-bottom:22px}
+.section-heading h2{font:700 13px "Space Grotesk";letter-spacing:1.5px;margin:0}.section-heading span{color:#999}
+.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-bottom:90px}
+.product-card{border:0;background:transparent;padding:0;text-align:left;color:inherit;cursor:pointer;min-width:0}
+.product-image{height:310px;background:#f5f5f3;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.product-image img{width:74%;height:83%;object-fit:contain;mix-blend-mode:multiply;transition:transform .35s}
+.view-label{position:absolute;bottom:13px;right:13px;background:#fff;padding:9px 11px;font-size:9px;letter-spacing:1px;opacity:0;transform:translateY(5px);transition:.25s}
+.product-card:hover .product-image img{transform:scale(1.045)}.product-card:hover .view-label{opacity:1;transform:none}
+.product-info{display:flex;justify-content:space-between;gap:8px;align-items:flex-start;padding:15px 1px}
+.product-info h3{font-size:13px;font-weight:600;margin:0 0 7px}.product-info p{font-size:9px;color:#999;margin:0;letter-spacing:1px}
+.product-info strong{font-size:10px;font-weight:500;color:#777;white-space:nowrap;padding-top:2px}
+.product-detail{padding:35px 0 95px}.back-button{border:0;background:none;padding:10px 0 30px;cursor:pointer;color:#777}
+.detail-layout{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center}.detail-image{background:#f5f5f3;min-height:530px;display:flex;align-items:center;justify-content:center}
+.detail-image img{width:70%;height:470px;object-fit:contain;mix-blend-mode:multiply}
+.detail-copy{max-width:430px}.detail-copy h1{font:700 clamp(35px,5vw,58px)/1.02 "Space Grotesk";letter-spacing:-2px;margin:0 0 12px}
+.detail-variant{font-size:11px;color:#888;letter-spacing:1.5px}.detail-price{font-size:14px;margin:30px 0}.detail-price strong{font-weight:600}
+.detail-rule{height:1px;background:var(--line);margin:28px 0}.detail-copy h2{font:700 13px "Space Grotesk";letter-spacing:1.5px}
+.order-copy{font-size:14px;line-height:1.7;color:#666}.phone-placeholder{margin-top:22px;padding:17px 18px;border:1px solid var(--black);font-size:11px;letter-spacing:1px}.phone-placeholder strong{margin-left:8px}
+.small-note{font-size:10px;color:#999;line-height:1.6;margin-top:12px}
+footer{border-top:1px solid var(--line);padding:23px 6.2%;display:flex;justify-content:space-between;color:#999}
+[hidden]{display:none!important}
+@media(max-width:850px){.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 14px}.product-image{height:300px}.intro{padding:65px 0 55px}}
+@media(max-width:560px){.site-header{height:65px;padding:0 20px}main{padding:0 20px}.intro{padding:58px 0 48px}.intro h1{letter-spacing:-4px}.products{gap:22px 10px;margin-bottom:60px}.product-image{height:220px}.product-info{display:block;padding-top:12px}.product-info strong{display:block;margin-top:10px}.product-info h3{font-size:12px}.detail-layout{grid-template-columns:1fr;gap:30px}.detail-image{min-height:360px}.detail-image img{height:330px}.detail-copy{padding-bottom:20px}footer{padding:20px;font-size:9px}}
