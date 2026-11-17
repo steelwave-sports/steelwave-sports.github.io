@@ -2,7 +2,9 @@ const products = [
   {name:"Camiseta STEELWAVE", variant:"AZUL CLARO", image:"assets/camiseta-azul.png"},
   {name:"Sudadera STEELWAVE", variant:"CON CAPUCHA · AZUL", image:"assets/sudadera-azul.jpg"},
   {name:"Sudadera STEELWAVE", variant:"CON CAPUCHA · NEGRA", image:"assets/sudadera-negra.jpg"},
-  {name:"Camiseta STEELWAVE", variant:"NEGRA", image:"assets/camiseta-negra.jpg"}
+  {name:"Camiseta STEELWAVE", variant:"NEGRA", image:"assets/camiseta-negra.jpg"},
+  {name: "Camiseta STEELWAVE", variant: "BLANCA", image: "assets/camiseta-blanca.jpg"},
+  {name: "Camiseta STEELWAVE", variant: "AZUL HIELO", image: "assets/camiseta-azul-hielo.jpg"}
 ];
 function showProduct(index){
   const p=products[index];
