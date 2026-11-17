@@ -24,7 +24,7 @@ main{max-width:1240px;margin:0 auto;padding:0 6.2%}
 .detail-image img{width:70%;height:470px;object-fit:contain;mix-blend-mode:multiply}
 .detail-copy{max-width:430px}.detail-copy h1{font:700 clamp(35px,5vw,58px)/1.02 "Space Grotesk";letter-spacing:-2px;margin:0 0 12px}
 .detail-variant{font-size:11px;color:#888;letter-spacing:1.5px}.detail-price{font-size:14px;margin:30px 0}.detail-price strong{font-weight:600}
-.detail-rule{height:1px;background:var(--line);margin:28px 0}.detail-copy h2{font:700 13px "Space Grotesk";letter-spacing:1.5px}
+.detail-rule{height:1px;background:var(--line);margin:28px 0}.detail-copy h2{font:700 13px "Space Grotesk";margin-bottom: 25px;letter-spacing:1.5px}
 .order-copy{font-size:14px;line-height:1.7;color:#666}.phone-placeholder{margin-top:22px;padding:17px 18px;border:1px solid var(--black);font-size:11px;letter-spacing:1px}.phone-placeholder strong{margin-left:8px;margin-top: 30px}
 .small-note{font-size:10px;color:#999;line-height:1.6;margin-top:12px}
 footer{border-top:1px solid var(--line);padding:23px 6.2%;display:flex;justify-content:space-between;color:#999}
